@@ -1,0 +1,41 @@
+h1{
+    color: hotpink;
+    border-bottom: dotted 10px purple;
+}
+
+p, h2{
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+.subtitle{
+    font-weight: bold;
+    color: #999999;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: darkslategray;
+}
+
+ul{
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: left;
+    size: relative;
+}
+
+a{
+    color: red;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: green;
+}
+
+.email{
+    color: green;
+}
