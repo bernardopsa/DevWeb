@@ -1,0 +1,122 @@
+Gabarito da Lista de Exercícios | Dev. Web
+
+1-
+- Manter histórico das motificações
+- Facilitar o trabalho em equipe
+- Facilitar a solução de conflitos de versões
+- Possibilitar a recuperação de versões antigas
+- Soluções de versionamento mais modernas facilitam a existência simultânea de mais de uma versão do software para testes
+
+2-
+- Git é um sistema de versionamento distribuído muito popular
+- Github é uma das plataformas que oferecem serviços baseados no git
+
+3-
+- HTML - conteúdo dos documentos web, corpo do documento, marcação semântica e de layout
+- CSS - formatação da apresentação, layout e animações
+- JS - comportamento dinâmico, geração de conteúdo, comunicação e manipulação de elementos do documento em tempo de execução
+
+
+4-
+- tag: código definido pela linguagem para marcação de um texto
+- elemento: componente dos documentos web constituído pelo conjunto formado por uma tag, o texto marcado (conteúdo) e seus atributos
+- atributo: parâmetros que definem características dos elementos.
+
+5- 
+<html>
+<head>
+<title>minha página</title>
+<meta charset='utf-8'>
+<head>
+<body>
+<p>Estou por aqui</p>
+</body>
+</html>
+
+6-
+Organização lógica dos protocolos de comunicação em camadas, baseadas em diferentes níveis de abstraçáo, com a premissa de que a camada de baixo presta um serviço para os protocolos da camada superior.
+
+7-
+TCP e UDP. A diferença é que o TCP é orientado a conexão e o UDP não é.
+
+8-
+Na arquitetura cliente-servidor existe uma separação de responsabilidades. O servidor está sempre no ar com um endereço IP permanente e responde aos clientes. Os clientes podem ter conexões intermitentes, podem ter endereços IP dinâmicos e não se comunicam entre si. Na arquitetura P2P não existe um servidor sempre ligado e os nós da aplicação cumprem os dois papéis, tanto de cliente quanto de servidor. Aplicações P2P são auto escaláveis e de gestão mais complicada.
+
+9-
+Processos são instâncias de programas rodando em computadores da rede. Eles são identificados para efeitos de comunicação pelo endereço IP do computador mais o número da porta.
+
+10-
+Oferece encriptação, integridade dos dados e autenticação de usuários para conexões TCP. Está na camada de aplicação.
+
+11-
+O nó raiz tem exatamente dois filhos. Um documento HTML tem como nó raiz o elemento HTML que possui como filhos o elemento head e o elemento body. Head e body não tem limite de filhos.
+
+12-
+Ver developer.mozzila.org/pt-BR/docs/Web/HTML/Element e a apresentação da semana 3
+
+13-
+form
+
+14-
+a
+
+15-
+input - campos de entrada
+select - menus suspensos
+options - opções do select
+button - elemento interativo
+textarea - texto de várias linhas
+label - descrever um elemento
+
+16-
+a) class - determina a quais conjuntos o elemento pertence
+b) id - identificação unívoca do elemento
+c) name - identificar valores dos elementos de formulário do lado do servidor, identifica elementos para leitura de agentes automáticos, possibilita identificação não unívaca
+d) hidden - ocultar um elemento
+e) style - aplica estilo ao elemento
+f) title - texto explicativo, identifica elementos para leitura de agentes automáticos, possibilidade identificação não unívoca
+
+17-
+Princípio que baliza a capacidade da tecnologia da web de abrir mão de elementos e manter a coerência e o sentido dos documentos. Isso viabiliza o funcionamento da tecnologia em dispositivos de diferentes capacidades e a torna resiliente.
+
+18-
+declaração: par chave-valor no qual uma propriedade (palavra-chave da linguagem) é associada a um valor. Ex.: color: red, font-size: 2em, ou background-color: #FFFFFF
+seletor: expressão usada para selecionar elementos HTML a serem estilizados. Ex.: p, .autores ou #titulo > span
+regra: formado por um conjunto de declarações separadas por ponto e vírgula (;), delimitado por chaves; e um seletor. Ex.: p{color: blue; font-size: 2.5em;}
+
+19-
+seletor de classe - seleciona um conjunto de elementos. Ex.: .minhaClasse
+seletor de id - seleciona o elemento com o id informado. Ex.: #meuElemento
+
+20-
+margin - espaço externo ao elemento
+border - linha sólida que circunda o elemento
+padding - distância do conteúdo do elemento até sua borda
+
+21-
+static - posicionamento padrão 
+relative - movimentação em relação a posição padrão (inclusive sobrepondo outros elementos)
+absolute - retira o elemento do fluxo normal e o posiciona relativamente ao documento (ou ao seu elemento pai)
+fixed -
+
+código:
+!TAB
+<style>
+body{width:800px; margin: 0 auto;}
+p{background-color: aquamarine; border: solid 1px pink;}
+#relativo{position: relative;}
+#absoluto{position: absolute; top: 150px; left: 40px; background-color: blueviolet;}
+#fixo{position: fixed; top: 5px; left: 10px; background-color: #ff7f508e;}
+</style>
+p id=estatico lorem
+p id=relativo lorem
+p id=absoluto lorem
+p id=fixo lorem
+
+22-
+{ }
+
+23-
+let - escopo de bloco (uso recomendado) 
+var - escopo de função (uso desestimulado)
+const - escopo de bloco. o nome não pode ser reatribuído
