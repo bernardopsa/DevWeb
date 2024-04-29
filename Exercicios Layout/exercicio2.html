@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+</head>
+
+<style>
+
+    #grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 400px);
+        grid-template-rows: repeat(3, 300px);
+        grid-template-areas:
+        "preta preta x x"
+        "preta preta x x"
+        "o branca branca branca";
+        background-color: yellow;
+    }
+
+    #branca{
+        background-color: white;
+        grid-area: preta;
+    }
+
+    #preta{
+        background-color: black;
+        grid-area: branca;
+    }
+
+    @media screen and (min-width:1024px){
+        #grid-container{grid-template-areas: 
+        "preta preta preta preta"
+        "n n n n"
+        "branca branca branca branca"}
+    }
+
+</style>
+
+<body>
+
+    <div id="grid-container">
+        <div id="preta"></div>
+        <div id="branca"></div>
+    </div>
+    
+</body>
+</html>
