@@ -1,0 +1,51 @@
+.card{
+    width: 30rem;
+    display: grid;
+    grid-template-areas:
+    "a1 a2"
+    "a1 a3"
+    "a4 a4"
+    "a5 a5";
+    border: solid transparent 30px;
+    border-image:url('https://portalcruzeirense.com.br/wp-content/uploads/2023/12/John-Textor-1.jpg') round 450;
+    padding: 1rem;
+}
+
+.card > imagem{
+    grid-area: a1;
+}
+
+.card img{
+    width: 7rem;
+    height: 7rem;
+    border-radius:50%;
+    object-fit: cover;
+    object-position: 15% 15%;
+}
+
+.text{
+    text-transform: uppercase;
+}
+
+.card > p.posicao{
+    grid-area: a2;
+}
+
+.card > p.nome{
+    grid-area: a3;
+}
+
+.card > p.descricao{
+    grid-area: a4;
+}
+
+.card > p.nascimento{
+    grid-area: a5;
+}
+
+.card > div.imagem{
+    grid-area: a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
